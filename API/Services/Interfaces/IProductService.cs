@@ -10,5 +10,7 @@ namespace API.Services.Interfaces
         DefaultResponse Create(Create model);
         DefaultResponse Update(int id, Edit model);
         DefaultResponse AddComments(int productId, List<Models.Comment.Create> comments);
+
+        ProductStats GetProductStats();
     }
 }

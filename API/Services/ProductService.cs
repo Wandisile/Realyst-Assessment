@@ -103,6 +103,32 @@ namespace API.Services
             };
         }
 
+        ProductStats IProductService.GetProductStats()
+        {
+            var totalProducts = _dbContext.Products.Count();
+
+            var numberOfProducts = _dbContext.Products
+                .Join(_dbContext.Comments,
+                p => p.ProductId,
+                c => c.ProductId,
+                (p, c) => new { prod = p, comm = c })
+                .GroupBy(g => g.comm.ProductId)
+                .Select(s => new CommentsPerProduct
+                {
+                    NrOfComments = s.Count(),
+                    Product = s.FirstOrDefault()!.prod.Name
+                }).ToList();
+
+
+            var stats = new ProductStats
+            {
+                TotalProducts = totalProducts,
+                NrOfCommentsPerProduct = numberOfProducts
+            };
+
+            return stats;
+        }
+
         private List<Models.Comment.List> GetComments(int productId)
         {
             return _dbContext.Comments.Where(c => c.ProductId == productId)
@@ -113,5 +139,6 @@ namespace API.Services
                     Email = a.Email
                 }).ToList();
         }
+
     }
 }
