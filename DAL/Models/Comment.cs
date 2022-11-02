@@ -15,6 +15,7 @@ namespace DAL.Models
 
         [Required]
         public string Email { get; set; }
+        public string CommentDescription { get; set; }
         public DateTime DateOfComment { get; set; }
 
         [Required]
