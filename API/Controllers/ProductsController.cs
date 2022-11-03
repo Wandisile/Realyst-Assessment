@@ -1,6 +1,5 @@
-﻿using API.Services.Interfaces;
-using DAL;
-using Microsoft.AspNetCore.Http;
+﻿using API.Models.Product;
+using API.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -30,7 +29,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Models.Product.Create model)
+        public IActionResult Post([FromBody] Create model)
         {
             try
             {
@@ -44,7 +43,7 @@ namespace API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Models.Product.Edit model)
+        public IActionResult Put(int id, [FromBody] Edit model)
         {
             try
             {

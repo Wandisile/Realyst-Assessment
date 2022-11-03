@@ -9,5 +9,7 @@ namespace API.Models.Comment
 
         [Required]
         public string Email { get; set; }
+
+        public int ProductId { get; set; }
     }
 }

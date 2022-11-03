@@ -9,8 +9,6 @@ namespace API.Services.Interfaces
         IEnumerable<List> Get();
         DefaultResponse Create(Create model);
         DefaultResponse Update(int id, Edit model);
-        DefaultResponse AddComments(int productId, List<Models.Comment.Create> comments);
-
         ProductStats GetProductStats();
     }
 }
