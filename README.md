@@ -6,7 +6,7 @@ Database is created using a Code first modeling workflow.
 
 * Replace `ConnectionStrings` value in API > appsettings.json
 * Build API and DAL projects
-* run script `update-database` (flag DAL project)
+* Execute `update-database` command (flag DAL project)
 
 ### Bulk Upload 
 * Replace `AppSettings` values
