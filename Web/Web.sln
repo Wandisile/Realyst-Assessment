@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "..\DAL\DAL.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "..\WebApp\WebApp.csproj", "{21DF847F-9AD9-4FA7-844B-2B0A76E78DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkUpload", "BulkUpload\BulkUpload.csproj", "{5860EB0A-7CCE-4660-95E1-1DDCCF1646AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkUpload", "BulkUpload\BulkUpload.csproj", "{5860EB0A-7CCE-4660-95E1-1DDCCF1646AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordSearcher", "WordSearcher\WordSearcher.csproj", "{94B8BEAF-5F0B-490D-800D-D8D0E95DE93A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5860EB0A-7CCE-4660-95E1-1DDCCF1646AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5860EB0A-7CCE-4660-95E1-1DDCCF1646AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5860EB0A-7CCE-4660-95E1-1DDCCF1646AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B8BEAF-5F0B-490D-800D-D8D0E95DE93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B8BEAF-5F0B-490D-800D-D8D0E95DE93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B8BEAF-5F0B-490D-800D-D8D0E95DE93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B8BEAF-5F0B-490D-800D-D8D0E95DE93A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
