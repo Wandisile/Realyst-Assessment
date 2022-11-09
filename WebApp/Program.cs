@@ -1,7 +1,13 @@
+using API.Services.Interfaces;
+using API.Services;
+using WebApp;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
